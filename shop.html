@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Carnival Night Zone</title>
+            <link rel="stylesheet" href="sas.css">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+            <style>
+                html{
+                    min-height:100%;
+                }
+                body{
+                    background: linear-gradient(to top, #171717, #242424) no-repeat;
+                    height: 100%;
+                    overflow: hidden;
+                }
+                header{
+                    background: linear-gradient(to top, #171717, #242424);
+                    padding: 10px;
+                    border: 1px solid black;
+                    height: 10%;
+                    color: #E6E6FA;
+                }
+                footer{
+                    height: 10%;
+                    padding: 10px;
+                    border: 1px solid black;
+                    background: linear-gradient(to top, #171717, #242424);
+                    color: #E6E6FA;
+                    text-align: center;
+                }
+                .CNZ{
+                    border: 1px solid black;
+                    color: #E6E6FA;
+                    height: 80%;
+                    background: linear-gradient(to top, #171717, #242424);
+                }
+                .top-menu{
+                    text-align: center;
+                    margin: 60px 60px;
+                    position: relative;
+                    background: #242424;
+                    box-shadow:
+                    inset 1px 0 0 rgba(255,255,255,.1),
+                    inset -1px 0 0 rgba(255,255,255,.1),
+                    inset 150px 0 150px -150px rgba(255,255,255,.12), 
+                    inset -150px 0 150px -150px rgba(255,255,255,.12);
+                }
+                .top-menu:before,
+                .top-menu:after{
+                    content: "";
+                    position: absolute;
+                    z-index: 2;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                }
+                .top-menu:before{
+                    top: 0;
+                    border-top: 1px dashed rgba(255,255,255,.2);
+                }
+                .top-menu:after{
+                    bottom: 0;
+                    border-top: 1px dashed rgba(255,255,255,.2);
+                }
+                .menu-main:before,
+                .menu-main:after{
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 0;
+                    top: 8px;
+                    border-top: 18px solid #5a394e;
+                    border-bottom: 18px solid #5a394e;
+                    transform: rotate(360deg);
+                    z-index: -1;
+                }
+                .menu-main:before{
+                    left: -30px;
+                    border-left: 12px solid rgba(255,255,255,0);
+                }
+                .menu-main:after{
+                    right: -30px;
+                    border-right: 12px solid rgba(255,255,255,0);
+                }
+                .menu-main li{
+                    display: inline-block;
+                    margin-right: -4px;
+                }
+                .menu-main a{
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 15px 30px;
+                    color: #E6E6FA;
+                    transition: .3s linear;
+                }
+                .menu-main a.current,
+                .menu-main a:hover {background: rgba(0,0,0,.2);}
+                .menu-main a.current{font-weight: bolder; font-style: italic;}
+                @media (max-width: 680px){
+                    .top-menu {margin: 0;}
+                    .menu-main li{
+                        display: block;
+                        margin-right: 0;
+                    }
+                    .menu-main:before,
+                    .menu-main:after{content: none;}
+                    .menu-main a {display: block;}
+                }
+                .logo{
+                    border: 2px solid #000000;
+                }
+               .gradient-border1{
+                
+                width: auto;
+                
+                height: auto;
+                display: flex;
+                flex:0 0 %;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+                margin-left: 40px;
+                margin-bottom: 40px;
+                margin-right: 40px;
+                background: linear-gradient(
+                    -45deg,
+                    #3f51b1 0%,
+                    #5a55ae 13%,
+                    #7b5fac 25%,
+                    #8f6aae 38%,
+                    #8f6aa4 50%,
+                    #cc6b8e 62%,
+                    #f18271 75%,
+                    #f3a469 87%,
+                    #f7c978 100%
+                );
+                background-size: 400%;
+                animation: animategrad 1s infinite;
+               }
+               
+               @keyframes animategrad{
+                0%{
+                    background-position: 0%;
+                }
+                50%{
+                    background-position: 100%;
+                }
+                100%{
+                    background-position: 0%;
+                }
+               }
+               .shoptable{
+                text-align: center;
+                margin: 60px 60px;
+                position: relative;
+                width: auto;
+                text-align: center;
+                color: #E6E6FA;
+                border: 1px solid black;background: linear-gradient(to top, #171717, #242424);
+               }
+               .description{
+                display: inline-block;
+                align-content: center;
+               }
+               body{
+                overflow-y: scroll;
+               }
+
+            </style>
+        </head>
+        <body>
+            <header><img class="logo" src="carnivalnightzoneavatar.png" width="64" height="64" align="middle"> Carnival Night Zone</header>
+            <div class="CNZ">
+                <nav class="top-menu">
+                <ul class="menu-main">
+                  <li><a href="" class="current">Казино</a></li>
+                  <li><a href="story.html" target="_self">История</a></li>
+                  <li><a href="account.html" target="_self">Аккаунт</a></li>
+                  <li><a href="gallery.html" target="_self">Галерея</a></li>
+                  <li><a href="contact.html" target="_self">Контакты</a></li>
+                </ul>
+                </nav>
+                <div class="shoptable">
+                    <div class="gradient-border1">
+                    <a href="lokh.html" target="_self"><img src="steamworkshop_guide_1387987853_guide_branding.png" width="128" height="128"></a>    
+                    </div>
+                    <div class="description">Обычный ящик Манн КО.</div>
+                        <div class="gradient-border1">
+                        <a href="lokh.html" target="_self"><img src="fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZULUrsm1j-9xgENbQsdYhjwuSxGt8nlAuCCG98Mmsgy4N4CgDAykFcuYbXsNTYydlKSAPMIBfE-8Am-XSE0vJM0UYLl9u4HfA-8qsKYZIJu-uRp.png" width="128" height="128" border="0"></a>
+                        </div>
+                        <div class="description">Осенний ящик Манн КО. Сезон 1</div>
+                        <div class="gradient-border1">
+                        <a href="lokh.html" target="_self"><img src="1625642-kongregate-modified-tf2-crate-sim.png" width="128" height="128"></a>
+                        </div>
+                        <div class="description">Осенний ящик Манн КО. Сезон 2</div>
+                        <div class="gradient-border1">
+                        <a href="lokh.html" target="_self"><img src="1136736285_preview_fWFc82js0fmoRAP-qOIPu5THSWqfSmTELLqcUywGkijVjZULUrsm1j-9xgEcbQMYUxzduypCnM3ZX82ACfIHnpRh48gE2mMzwlQjZ7DtYWYwcFOSBaVdWKdp9Q29DyRhsMZhA4bh8uhVZ0yx47-CvBrd.png" width="128" height="128"></a>
+                        </div>
+                        <div class="description">Водный ящик Манн КО. Сезон 1</div>
+                        <div class="gradient-border1">
+                        <a href="lokh.html" target="_self"><img src="2494429-9761369753-Backp.png" width="128" height="128"></a>
+                        </div>
+                        <div class="description">Ключ Манн КО.</div>
+                </div>
+
+
+            </div>
+            <audio src="Sonic-3-Music-Carnival-Night-Zone.ogg" type='audio/ogg; codecs=vorbis' controls></audio>
+            <footer>Averyanov & Ponomarev CO&#174. Valve&#174, Source&#174 and Team Fortress 2&#174 is copyright of Valve Game Studio. 2021. All right was selled.</footer>
+        </body>
+    </html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Carnival Night Zone</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+            <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+            <style>
+                html{
+                    min-height:100%;
+                }
+                body{
+                    background: linear-gradient(to top, #171717, #242424) no-repeat;
+                    height: 100%;
+                    overflow: hidden;
+                }
+                header{
+                    background: linear-gradient(to top, #171717, #242424);
+                    padding: 10px;
+                    border: 1px solid black;
+                    height: 10%;
+                    color: #E6E6FA;
+                }
+                footer{
+                    height: 10%;
+                    padding: 10px;
+                    border: 1px solid black;
+                    background: linear-gradient(to top, #171717, #242424);
+                    color: #E6E6FA;
+                    text-align: center;
+                }
+                .CNZ{
+                    border: 1px solid black;
+                    color: #E6E6FA;
+                    height: 80%;
+                    background: linear-gradient(to top, #171717, #242424);
+                }
+                .top-menu{
+                    text-align: center;
+                    margin: 60px 60px;
+                    position: relative;
+                    background: #242424;
+                    box-shadow:
+                    inset 1px 0 0 rgba(255,255,255,.1),
+                    inset -1px 0 0 rgba(255,255,255,.1),
+                    inset 150px 0 150px -150px rgba(255,255,255,.12), 
+                    inset -150px 0 150px -150px rgba(255,255,255,.12);
+                }
+                .top-menu:before,
+                .top-menu:after{
+                    content: "";
+                    position: absolute;
+                    z-index: 2;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                }
+                .top-menu:before{
+                    top: 0;
+                    border-top: 1px dashed rgba(255,255,255,.2);
+                }
+                .top-menu:after{
+                    bottom: 0;
+                    border-top: 1px dashed rgba(255,255,255,.2);
+                }
+                .menu-main:before,
+                .menu-main:after{
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 0;
+                    top: 8px;
+                    border-top: 18px solid #5a394e;
+                    border-bottom: 18px solid #5a394e;
+                    transform: rotate(360deg);
+                    z-index: -1;
+                }
+                .menu-main:before{
+                    left: -30px;
+                    border-left: 12px solid rgba(255,255,255,0);
+                }
+                .menu-main:after{
+                    right: -30px;
+                    border-right: 12px solid rgba(255,255,255,0);
+                }
+                .menu-main li{
+                    display: inline-block;
+                    margin-right: -4px;
+                }
+                .menu-main a{
+                    text-decoration: none;
+                    display: inline-block;
+                    padding: 15px 30px;
+                    color: #E6E6FA;
+                    transition: .3s linear;
+                }
+                .menu-main a.current,
+                .menu-main a:hover {background: rgba(0,0,0,.2);}
+                .menu-main a.current{font-weight: bolder; font-style: italic;}
+                @media (max-width: 680px){
+                    .top-menu {margin: 0;}
+                    .menu-main li{
+                        display: block;
+                        margin-right: 0;
+                    }
+                    .menu-main:before,
+                    .menu-main:after{content: none;}
+                    .menu-main a {display: block;}
+                }
+                img{
+                    border: 2px solid #000000;
+                }
+                body{
+                overflow-y: scroll;
+               }
+               .sas{
+                font-size: 26px;
+                text-align: center;
+               }
+               
+            </style>
+        </head>
+        <body>
+            <header><img src="carnivalnightzoneavatar.png" width="64" height="64" align="middle"> Carnival Night Zone</header>
+            <div class="CNZ">
+                <nav class="top-menu">
+                <ul class="menu-main">
+                  <li><a href="shop.html" target="_self">Казино</a></li>
+                  <li><a href=""class="current">История</a></li>
+                  <li><a href="account.html" target="_self">Аккаунт</a></li>
+                  <li><a href="gallery.html" target="_self">Галерея</a></li>
+                  <li><a href="contact.html" target="_self">Контакты</a></li>
+                </ul>
+                </nav>
+               <div class="sas"> Компания «Carnival Night Zone» основана российским предпринимателем Олегом Деревянным 25 октября 1993 года в Микуне. Первый магазин «Carnival Night Zone» открылся и закрылся через 5 дней.
+                <br>
+				<br>
+                В 1999 году Олег принимает решение о переформатировании сети магазинов и открывает первый казино-центр, и это казино было в игре Sonic The Hedgehog 3. Но договор с Эггманом распался вместе с СССР, и казино пришлось взорвать.
+                <br>
+				<br>
+                2006 год ознаменовался открытием нового казино за пределами Планеты Земля: открыты два казино-центра на Марсе и по одному на Луне и Плутоне. В 2007 году открыто ещё десять казино-центров (три из них на планете мутантов, которые любят поесть плутоний), в 2008 — ещё восемь. Количество действующих казино-центров не превысило одного.
+                <br>В мае 2007 года Центральный Банк Африки за $125 млн купил долю в «Carnival Night Zone», и на сдачу ящик пива, который составил 50% от цены компании.
+                <br>
+				<br>
+                В августе 2016 года на Венере открылся шестой казино-центр, из двух возможных.
+                <br>
+				<br>
+                В 2009—2017 годах открыто больше тридцати подпольных казино: пять на Солнце, Проксима-Центавре и Бетельгейзе, ещё три — На Вере и Правде, четыре - на Дне, три — в Море, Вулкане, На даче у Путина, В Домодедово в аеропорту, в Лесу, в ракетных шахтах Мьянмы; по два — в аду, чистилище, офисе Valve и ГосДуме. Также «Carnival Night Zone» появлялась и на арендованных площадях в существующих мирах.
+                <br>
+				<br>
+                В Москве компания открывает казино не в привычном формате , а в формате супер-супермаркета. 27 апреля 2013 года открылся первый супер-супермаркет «Carnival Night Zone» в Москве, а 18 мая этого же года — первый казино-центр, в котором нет казино. На декабрь 2013 года в Москве действует десять рабов, в Московской области — один суперраб. Количество гипер- и суперрабов достигло 0.
+                <br>
+				<br>
+                30 ноября 2016 года «СБУ» завершила сделку по приобретению продовольственных активов компании «Carnival Night Zone», туалетов с турбонадувом на складе и Мавзолей, где Ленин лежит под брендом Ruka-Pop. 7 декабря казино-центры открылись под брендом «Carnival Night Zone».
+                <br>
+				<br>
+                7 ноября этого самого «Carnival Night Zone» объявила о подписании соглашения с ГК Хламидией о приобретении 22 суперрабов на цену в 50 юаней США в сибирском регионе. В состав приобретенного актива войдут 22 собственных суперраба, работающих под брендами «Хламидии Классик», «Кора дуба» и «Хулиганы Интернационал». 11 казинов расположены в Ново-Огарёво, 7 — в Кремле и 4 — в МосГорДуме. Средняя торговая площадь казинов составляет около 800 мм², общая торговая площадь приобретаемых казинов — около 18 руб.
+                <br>
+				<br>
+                27 декабря 2014 года в Новосибирске открылся седьмой казино-центр.
+                <br>
+				<br>
+                В 2015 году в Нижнем Тагиле был открыт 2-й гиперраб
+                <br>
+				<br>
+                21 декабря 2017 года первый казино-центр «Carnival Night Zone» открылся в Братске.
+                <br>
+				<br>
+                В 2020 году общая выручка «Carnival Night Zone» относительно 2019-го выросла на 69,7%, до -4 трлд юаней США. В четвертом квартале 2020 года общая выручка увеличилась на 146,146% по сравнению с показателем за аналогичный период предыдущего года, до 1 гривны. Розничная выручка в 2020 году увеличилась на 0%, до 8 венесуэльских болливаров. В октябре—декабре она выросла на -5,7%, до -121,786 млрд рублей.
+                <br><br></div> 
+            </div>
+            <audio src="Sonic-3-Music-Carnival-Night-Zone.ogg" type='audio/ogg; codecs=vorbis' controls></audio>
+            <footer>Averyanov & Ponomarev CO&#174. Valve&#174, Source&#174 and Team Fortress 2&#174 is copyright of Valve Game Studio. 2021. All right was selled.</footer>
+        </body>
+    </html>
